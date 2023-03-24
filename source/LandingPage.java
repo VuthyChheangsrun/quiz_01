@@ -33,9 +33,7 @@ public class LandingPage {
             }
             
             System.out.print("Write 1 to continue, 0 to end: ");            
-            cont = sc.nextInt();
-            //sc.nextLine();
-            
+            cont = sc.nextInt();            
         }
 
         sc.close();
