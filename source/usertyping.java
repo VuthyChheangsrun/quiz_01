@@ -47,8 +47,8 @@ public class usertyping {
         double wpm = 60.0 * totalChars / (5.0 * totalTime);
 
         System.out.println("Congratulations !");
-        System.out.printf("Your typing speed is: %.2f", wpm+" words per minute"+"\n");
-        System.out.printf("\nYour accuracy is: %.2f" ,accuracy , "%");
+        System.out.printf("Your typing speed is: %.2f words per minute\n", wpm);
+        System.out.printf("\nYour accuracy is: %.2f percent" , accuracy);
     }
 
     private static int countMistakes(String text, String input) {

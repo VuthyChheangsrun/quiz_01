@@ -8,8 +8,7 @@ public class LandingPage {
         Scanner sc = new Scanner(System.in);
 
         int cont = 1;
-
-        while (cont==1){
+        while (cont==1) {
 
             System.out.print("""
                 =====================================
@@ -18,29 +17,25 @@ public class LandingPage {
                 3. Login
                 4. List of test result
                 5. User typing test
+                6. About Us
                 =====================================
                 Choose an option:  """);
             int option = sc.nextInt();
+            sc.nextLine();
 
-            if (option==1){
-                Register.main(args);
-                
+            switch(option){
+                case 1: Register.main(args); break;
+                case 2: ResetPw.main(args); break;
+                case 3: userlogin.main(args); break;
+                case 4: ResultList.main(args); break;
+                case 5: usertyping.main(args); break;
+                case 6: AboutUs.main(args); break;
             }
-            else if (option==2){
-                
-            }
-            else if (option==3){
-                
-            }
-            else if (option==4){
-                
-            }
-            else if (option==5){
-
-            }
-
-            System.out.print("Continue? write 1=>yes or 0=>no: ");
+            
+            System.out.print("Write 1 to continue, 0 to end: ");            
             cont = sc.nextInt();
+            //sc.nextLine();
+            
         }
 
         sc.close();
